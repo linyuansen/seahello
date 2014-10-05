@@ -58,6 +58,8 @@ public class FItemAction extends ActionSupport implements ServletRequestAware ,S
 	
 	@Resource
 	private IFItemService service;
+
+
 	
 	public String saveOrUpdate(){
 		this.service.save(this.fitem);
@@ -88,5 +90,7 @@ public class FItemAction extends ActionSupport implements ServletRequestAware ,S
 	}
 	
 	
+	
+
 
 }

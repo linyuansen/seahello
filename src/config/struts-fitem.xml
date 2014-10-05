@@ -24,12 +24,12 @@
 		<action name="editFItem" class="com.rc.dl.action.FItemAction" method="edit">
 			<result name="success">/fitem/updateFItem.jsp</result>			
 		</action>
-		<action name="fileUpload" class="com.rc.dl.action.FItemAction" method="upload">
+		<action name="fileUpload" class="com.rc.dl.action.FileUploadAction" >
 			<result name="success">/fitem/fileUpload.jsp</result>			
 		</action>
 		
-		<action name="listFile" class="com.rc.dl.action.FItemAction" method="listFile">
-			<result >/fitem/fileUpload.jsp</result>		
+		<action name="listFile" class="com.rc.dl.action.FileUploadAction" >
+			<result>/fitem/fileUpload.jsp</result>		
 		</action>
 		<action name="genereteExcel" class="genereteExcelAction">
 			<result type="stream">
